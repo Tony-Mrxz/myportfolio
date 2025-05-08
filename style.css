@@ -1,0 +1,912 @@
+body {
+    background-image: url(home.jpg); /* Dark background for contrast */
+    font-family: Arial, sans-serif; /* Font style */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding around the body */
+}
+
+.profile-container {
+    display: flex;
+    max-width: 1200px; /* Set a maximum width for the profile container */
+    width: 100%; /* Full width */
+    flex-direction: column;
+    
+    
+    align-items: center;
+}
+
+.badge1 img {
+    display: inline;
+    width: 40px;  /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.badge2 img {
+    display: inline;
+    width: 40px;  /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.badge3 img {
+    display: inline;
+    width: 40px;  /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.profile-content {
+    display: flex;
+    width: 100%;
+
+    max-width: 1300px; /* Adjust based on your design */
+}
+
+.profile-card {
+    flex: 2; /* Adjusts the size of the main profile block */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Initial glow */
+    
+ 
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between projects */
+    color: white;
+    background: #1e1e1ec9; /* Optional background for visibility */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4 10px rgba(0, 0, 0, 0.527);
+    margin-top: 15px; /* Space above projects */
+}
+
+.banner {
+    width: 100%; /* Full width */
+    height: 150px; /* Set a fixed height for the banner */
+    overflow: hidden; /* Hide overflow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.banner-image {
+    width: 100%; /* Make banner responsive */
+    height: 100%; /* Ensure the image fills the banner height */
+    object-fit: cover; /* Crop the image to fit the banner dimensions */
+}
+
+.profile-card {
+    margin-top: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    background-color: #1e1e1ec9; /* Dark background for the profile card */
+    border-radius: 10px; /* Rounded corners for the profile card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.527); /* Soft shadow */
+    padding: 20px; /* Padding inside the profile card */
+
+
+
+}
+
+.profile-header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-pic {
+    width: 80px; /* Profile picture size */
+    height: 80px; /* Profile picture size */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 20px; /* Space between picture and user info */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 1);
+
+
+}
+
+.section-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+    
+}
+
+.section-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cyan;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-button:hover {
+    color: cyan; /* Chroma key highlight on hover */
+}
+
+.section-button:hover::after {
+    width: 100%;
+}
+
+.section-button.active {
+    background-color: rgba(0, 255, 255, 0.2); /* Chroma key background when active */
+}
+
+.section-button.active::after {
+    width: 100%;
+}
+
+.user-info {
+    flex-grow: 1; /* Allow user info to grow */
+}
+
+.badge {
+    margin-left: 5px; /* Space between badges */
+    
+}
+
+.introduction, .projects, .connections, .designs {
+    background-color: #2D2D2D; /* Slightly lighter background for contrast */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside sections */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 15px; /* Space above sections */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Set a maximum width */
+    box-sizing: border-box;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.introduction.active, .projects.active, .connections.active, .designs.active {
+    opacity: 1; /* Show active section */
+}
+
+.projects {
+    text-align: center;
+    color: white;
+    background: #2D2D2D;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    margin-top: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.filter-btn {
+    background-color: #01ffff41; /* Default background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.filter-btn:hover {
+    background-color: #00c3d1; /* Hover background */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+  
+.filter-btn:active {
+    background-color: #000000; /* Active background */
+}
+
+.filter-btn.active {
+    background-color: #00d1c7; /* Highlight active button */
+    color: black; /* Change text color for contrast */
+    font-weight: bold;
+}
+
+
+  
+  
+  /* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+  
+.modal-img {
+    max-width: 90%;
+    max-height: 70%;
+    margin: 20px auto;
+    display: block;
+}
+  
+.modal-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.close {
+    position: absolute;
+    top: 15px; right: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.modal-nav button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.gallery {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: #6665653d;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: start; /* Align items at the top */
+    padding: 15px;
+}
+
+.design-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Border for design container */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #2D2D2D; /* Background for design container */
+}
+
+.design-container img {
+    width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Adjust height dynamically based on aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    border-radius: 8px; /* Match the container's border radius */
+    margin-bottom: 10px; /* Space between image and title */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.design-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Add glow effect */
+}
+
+.design-container img.logo {
+    width: 150px; /* Fixed width for logos */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center logos horizontally */
+    border: 2px solid #00d1a3; /* Highlight logos with a border */
+    transition: border-color 0.3s ease;
+}
+
+.design-container img.logo:hover {
+    border-color: #01ffc8; /* Change border color on hover */
+}
+
+.design-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Border separating title */
+    padding-top: 10px;
+}
+
+.projects-container {
+    display: flex;
+    
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: center;
+    gap: 80px;
+    margin-top: 10px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: center;
+    background-color: #464444af;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth transition */
+}
+
+
+.project {
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 
+                0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+.project-icon {
+    width: 100px;
+    height: 100px;
+}
+
+/* Headings Styling */
+h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-bottom: 2px solid #ffffff50;
+    padding-bottom: 5px;
+    gap: 10px; /* Space between text and GIF */
+}
+
+/* GIF Icons */
+.completed-gif,
+.loading-gif {
+    width: 25px; /* Adjust size */
+    height: 25px;
+}
+
+.connections {
+    background-color: #2D2D2D; /* Background for connections */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside connections */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 15px; /* Space above connections */
+    display: flex; /* Use flexbox to layout the items */
+    flex-direction: column;
+}
+
+.connection-item {
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between connections */
+    display: inline-flex; /* Use inline-flex for each button item */
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.connection-button {
+    display: inline-flex; /* Keep using flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: transparent; /* Make background transparent */
+    color: white; /* Text color */
+    padding: 15px 25px; /* Increase padding for a bigger button */
+    border: 2px solid cyan; /* Border color */
+    border-radius: 12px; /* Increase border radius */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s; /* Smooth transitions */
+}
+
+.connection-button:hover {
+    background-color: rgba(0, 255, 255, 0.1); /* Slight cyan background on hover */
+    border-color: white; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.following-button {
+    display: inline-flex; /* Keep using flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(0, 225, 255, 0.411); /* Make background transparent */
+    color: white; /* Text color */
+    margin-right: 5px;
+    padding: 15px 25px; /* Increase padding for a bigger button */
+    border: 3px solid rgb(63, 59, 59); /* Border color */
+    border-radius: 50px; /* Increase border radius */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s; /* Smooth transitions */
+    font-size: 1.2em; /* Increase text size */
+}
+
+.following-button:hover {
+    background-color: rgba(0, 255, 255, 0.1); /* Slight cyan background on hover */
+    border-color: white; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.like-button {
+    display: inline-flex; /* Keep using flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(0, 225, 255, 0.411); /* Make background transparent */
+    color: white; /* Text color */
+    margin-left: 10px;
+    padding: 15px 25px; /* Increase padding for a bigger button */
+    border: 3px solid rgb(63, 59, 59); /* Border color */
+    border-radius: 25px; /* Increase border radius */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s; /* Smooth transitions */
+    font-size: 1.1em; /* Increase text size */
+    position: relative; /* For positioning the heart burst */
+}
+
+.like-button:hover {
+    background-color: rgba(0, 255, 255, 0.1); /* Slight cyan background on hover */
+    border-color: white; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.like-button.clicked {
+    pointer-events: none; /* Disable further clicks */
+}
+
+.like-button:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Slight red background on hover */
+    border-color: white; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.youtube-button-logo {
+    width: 20px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 8px; /* Space between logo and text */
+}
+
+.button-logo {
+    margin-right: 5px;
+}
+
+.invite-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #33ffee;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.invite-button:hover {
+    background-color: #06f86b; /* Color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+
+
+.Contacts {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex; /* Enable flexbox */
+    justify-content: space-evenly; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width of the container */
+    max-width: 1165px; /* Set a maximum width */
+    background-color: #2d2d2db4;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto; /* Center horizontally */
+    color: white;
+}
+
+.contact {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center; /* Center each contact item */
+    align-items: center; /* Align items vertically */
+    width: 70px; /* Adjust width of each icon container */
+    height: 70px; /* Adjust height of each icon container */
+    background-color: #464444af;
+    width: 100%;
+    max-width: 50%;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin: 10px; /* Space between icons */
+    padding: 10px;
+}
+
+.tick {
+    margin-left: 5px;
+}
+
+.contact-button {
+    margin: 10px; /* Space between icons */
+    transform: scale(1);
+}
+
+.contact-button:hover {
+    transform: scale(1.3); /* Slightly increase size on hover */
+}
+
+.section-button {
+    background: none;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.section-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: cyan;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-button:hover {
+    color: cyan; /* Chroma key highlight on hover */
+}
+
+.section-button:hover::after {
+    width: 100%;
+}
+
+.section-button.active {
+    background-color: rgba(0, 255, 255, 0.2); /* Chroma key background when active */
+}
+
+.section-button.active::after {
+    width: 100%;
+}
+
+/* Outer Glassmorphism Container */
+.experiences-container {
+    display: flex;
+    gap: 20px; /* Reduce space between cards */
+    justify-content: center; /* Center the cards */
+    flex-wrap: wrap; /* Allow wrapping to fit everything */
+    
+    background: rgba(255, 255, 255, 0.041);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+
+    padding: 15px;
+    max-width: 90%; /* Keep it responsive */
+    margin: auto;
+}
+
+/* Card Styling */
+.experience-card {
+    background: linear-gradient(135deg, rgba(0, 195, 255, 0.2), rgba(0, 86, 255, 0.2));
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    width: 180px; /* Reduce width */
+    height: 100px; /* Reduce height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Initial glow */
+    
+    /* Glassy Border Effect */
+
+    border-image: linear-gradient(135deg, rgba(0, 195, 255, 0.8), rgba(0, 86, 255, 0.8)) 1;
+}
+
+/* Icons */
+.experience-card img {
+    width: 28px; /* Smaller icons */
+    height: 28px;
+    margin-bottom: 5px;
+}
+
+.experience-card:hover {
+    transform: scale(1.04); /* Slightly increase size on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 
+                0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+
+
+#music-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(75, 75, 75, 0.568);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: pulseGlow 2s infinite alternate;
+}
+
+#music-thumbnail img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+#music-box:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 
+                0 0 40px rgba(0, 255, 255, 0.5);
+}
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6); }
+    100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); }
+}
+
+/* Expanded Animation */
+#music-box.expanded {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(95, 95, 95, 0.541);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: expandEffect 0.4s ease-in-out;
+}
+
+/* Smooth Expand Animation */
+@keyframes expandEffect {
+    0% { transform: scale(0.9); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Music Details */
+#music-details {
+    display: none;
+    flex-grow: 1;
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+#music-box.expanded #music-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#music-box.expanded #music-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px; /* Adjust space between button & link */
+    margin-top: 10px;
+}
+
+#mute-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+#mute-btn img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Makes icon white */
+}
+
+#mute-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Song link styling */
+#song-link {
+    font-size: 18px;
+    color: #4AC0FF; /* Light blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#song-link img {
+    width: 26px;
+    height: 26px;
+}
+
+#song-link:hover {
+    color: #68d3ff;
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons */
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+}
+
+#link-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+footer {
+    color: aqua;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+  }
+
+@keyframes heartBurst {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.heart-burst {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('heart.png') no-repeat center center;
+    background-size: contain;
+    animation: heartBurst 0.6s ease-out forwards;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust layout for mobile devices */
+
+    .banner,
+    .sections,
+    .profile-content,
+    .profile-header,
+    .profile-card,
+    .project,
+    .connections,
+    .connection-item,
+    .contact,
+    .Contacts,
+    .section-button,
+    .experiences-container,
+    .experience-card {
+        width: 90%; /* Keep it responsive */
+        max-width: 750px; /* Set a uniform width */
+        margin: 10px auto; /* Center align */
+        text-align: center;
+    }
+
+    .profile-content,
+    .profile-header,
+    .connections,
+    .experiences-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    .user-info {
+        text-align: center;
+    }
+
+    .project-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .connection-item {
+        justify-content: center;
+    }
+
+    .Contacts {
+        flex-direction: column;
+    }
+
+    .experience-card {
+        margin-bottom: 10px;
+    }
+}
+
+

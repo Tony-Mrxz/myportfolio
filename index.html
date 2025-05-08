@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony.Mrxz | Profile </title>
+    <link rel="icon" href="mrxz circle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Banner Section -->
+        <div class="banner">
+            <img src="banner.gif" alt="Banner" class="banner-image">
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- Profile Card -->
+            <div class="profile-card">
+                <!-- Profile Header -->
+                <div class="profile-header">
+                    <img src="profile.png" alt="Profile Picture" class="profile-pic">
+                    <div class="user-info">
+                        <h2 style="text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 
+                        0 0 10px rgba(255, 255, 255, 0.5);
+           transition: text-shadow 0.5s ease-in-out;">Tony   &bull;   He/Him</h2>
+                        <span class="badge1"><img src="badge1.png" alt="badge1"></span>
+                        <span class="badge2"><img src="badge2.gif" alt="badge2"></span>
+                        <span class="badge3"><img src="badge3.gif" alt="badge3"></span>
+                    </div>
+                    <button class="following-button" onclick="window.open('https://www.instagram.com/musicu.mrxz/', '_blank')">
+                        Following
+                        <img class="tick" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMGVlZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zbWFydHBob25lLW5mYyI+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMTIiIHg9IjIiIHk9IjYiIHJ4PSIxIi8+PHBhdGggZD0iTTEzIDguMzJhNy40MyA3LjQzIDAgMCAxIDAgNy4zNiIvPjxwYXRoIGQ9Ik0xNi40NiA2LjIxYTExLjc2IDExLjc2IDAgMCAxIDAgMTEuNTgiLz48cGF0aCBkPSJNMTkuOTEgNC4xYTE1LjkxIDE1LjkxIDAgMCAxIC4wMSAxNS44Ii8+PC9zdmc+">
+                    </button>
+                    <button class="like-button" onclick="handleLikeClick()">❤️ <span id="like-count"> 0</span></button>
+                </div>
+                <div class="sections">
+                    <button class="section-button" onclick="showSection('introduction')">About Me</button>
+                    <button class="section-button" onclick="showSection('projects')">Projects</button>
+                    <button class="section-button" onclick="showSection('designs')">Designs</button>
+                    <button class="section-button" onclick="showSection('connections')">Connections</button>
+                </div>
+
+                <!-- Introduction Section -->
+                <div id="introduction" class="introduction active">
+                    <h3 style="color: #01ffc8; text-align: center; text-shadow: 0 0 5px rgba(1, 255, 200, 0.589), 
+                    0 0 10px rgba(1, 255, 200, 0.486);
+       transition: text-shadow 0.5s ease-in-out;">Hey! I'm Tony, Also Known As Lalith!</h3>
+                    <p style="font-size: 1.2em; text-align: center; text-shadow: 0 0 5px rgba(1, 255, 200, 0.7), 
+                    0 0 10px rgba(1, 255, 200, 0.5);
+       transition: text-shadow 0.5s ease-in-out;"><strong>Owner of <span style="color: #00eeff;">Mrxz</span></strong></p>
+                    <p> 🌟 <strong>In Short:</strong></p>
+                    <p>I'm a passionate musician and a tech enthusiast with a love for exploring both the artistic and technical sides of life. Here's a glimpse into my world:</p>
+                    <p> 🎼 <strong>Music:</strong></p>
+                    <p>I'm a professional flutist, and I also play the violin, guitar, and keyboard.</p>
+
+                    <p> 💻 <strong>Technology:</strong></p>
+                    <p>I work with Python, HTML, and CSS, and I'm continuously learning new programming languages, AI bots & assistants, video editing, and graphic design.</p>
+
+                    <p> ⚡ <strong>Technical Side:</strong></p>
+                    <p>I dabble in electrical work—sometimes I get shocks, but I’m still alive!</p>
+
+                    <div class="experiences-container">
+                        <div class="experience-card">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jb2RlLXhtbCI+PHBhdGggZD0ibTE4IDE2IDQtNC00LTQiLz48cGF0aCBkPSJtNiA4LTQgNCA0IDQiLz48cGF0aCBkPSJtMTQuNSA0LTUgMTYiLz48L3N2Zz4=" alt="code" class="experience-icon">
+                            <p><b>4+ Years</b> Development Experience</p>
+                        </div>
+                    
+                        <div class="experience-card">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyIj48cGF0aCBkPSJNMTkgMjF2LTJhNCA0IDAgMCAwLTQtNEg5YTQgNCAwIDAgMC00IDR2MiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNyIgcj0iNCIvPjwvc3ZnPg==" alt="users" class="experience-icon">
+                            <p><b>97K+</b> Active Users</p>
+                        </div>
+
+                        <div class="experience-card">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyIj48cGF0aCBkPSJNMTkgMjF2LTJhNCA0IDAgMCAwLTQtNEg5YTQgNCAwIDAgMC00IDR2MiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNyIgcj0iNCIvPjwvc3ZnPg==" alt="users" class="experience-icon">
+                            <p><b>14+</b> Music Experience</p>
+                        </div>
+
+                        <div class="experience-card">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyIj48cGF0aCBkPSJNMTkgMjF2LTJhNCA0IDAgMCAwLTQtNEg5YTQgNCAwIDAgMC00IDR2MiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNyIgcj0iNCIvPjwvc3ZnPg==" alt="users" class="experience-icon">
+                            <p><b>3+</b> Graphic Desinging Experience</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Projects Section -->
+                <div id="projects" class="projects">
+                    <h3>My Projects</h3>
+                
+                    <!-- Completed Projects Section -->
+                    <h4><img class="completed-gif" src="completed.gif" alt="Completed"> Completed Projects</h4>
+                    <div class="projects-container">
+                        <div class="project">
+                            <img src="mrxz.gif" alt="Mrxz" class="project-icon">
+                            <p><b>Mrxz:</b> A Discord bot providing advanced features and server management tools.</p>
+                            <a href="https://top.gg/bot/1091297088899387443?s=0bfa477e9691e" class="invite-button">Invite Me</a>
+                        </div>
+                        <div class="project">
+                            <img src="connect.gif" alt="Connect" class="project-icon">
+                            <p><b>Connect:</b> A Discord matchmaking and love partner-finding bot.</p>
+                            <a href="https://top.gg/bot/1271770172641775636?s=0bcb213e5a47a" class="invite-button">Invite Me</a>
+                        </div>
+                    </div>
+                
+                    <!-- Currently Working On Section -->
+                    <h4><img class="loading-gif" src="loading.gif" alt="Loading"> Currently Working On</h4>
+                    <div class="projects-container">
+                        <div class="project">
+                            <img src="Astra.png" alt="Astra" class="project-icon">
+                            <p><b>Astra:</b> An advanced AI assistant that enhances your daily life by enabling hands-free control of any device.</p>
+                        </div>
+                        <div class="project">
+                            <img src="auxin.png" alt="Auxin" class="project-icon">
+                            <p><b>Auxin:</b> A highly customizable web browser with unique and innovative features.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Designs Section -->
+                <div id="designs" class="designs">
+                    <div class="filter-buttons">
+                        <button data-filter="logos" class="filter-btn">Logos</button>
+                        <button data-filter="landscapes" class="filter-btn">Landscapes</button>
+                        <button data-filter="portraits" class="filter-btn">Portraits</button>
+                      </div>
+                      
+                      <div class="gallery" id="galleryContainer"></div>
+                      
+                      <!-- Modal -->
+                      <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-img" id="modalImage">
+                        <div class="modal-title" id="modalTitle"></div>
+                        <div class="modal-nav">
+                          <button id="prevBtn">←</button>
+                          <button id="nextBtn">→</button>
+                        </div>
+                      </div>                      
+                </div>
+                
+
+                <!-- Connections Section -->
+                <div id="connections" class="connections">
+                    <h3>Connections</h3>
+                    <div class="connection-item">
+                        <a href="https://www.instagram.com/musicu.mrxz/" class="connection-button">
+                            Instagram
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="class="button-logo">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYWRnZS1jaGVjayI+PHBhdGggZD0iTTMuODUgOC42MmE0IDQgMCAwIDEgNC43OC00Ljc3IDQgNCAwIDAgMSA2Ljc0IDAgNCA0IDAgMCAxIDQuNzggNC43OCA0IDQgMCAwIDEgMCA2Ljc0IDQgNCAwIDAgMS00Ljc3IDQuNzggNCA0IDAgMCAxLTYuNzUgMCA0IDQgMCAwIDEtNC43OC00Ljc3IDQgNCAwIDAgMSAwLTYuNzZaIi8+PHBhdGggZD0ibTkgMTIgMiAyIDQtNCIvPjwvc3ZnPg==">
+                        </a>
+                    </div>
+                    <div class="connection-item">
+                        <a href="https://www.youtube.com/channel/UCqfWAQJ8Q2m_2DxoCHSSeWA" class="connection-button">
+                            Youtube - Mrxz Music
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVdJREFUSEvt1T1LHUEUxvHfVQvFF0QFEZQUCpIiRWws06URLPwCFoKF+iVEWxvBKiB+Bb9CuhhQtDGmsBBJoYKIFgHxZQd2YR3u3bmQ3EK40+3OOc//zHnO7Na0eNVarK8NSHY4btEYNjCFcUwmFXjBKa5xhnX8KfLKgGn8RH8TolUhd5jBeQgqA/aw+I/iRfoulmLAIT7/J8ABZmPADYYbAEKf57Cd+5Oq4wIfYsATOhpkPmfmd6ILa/kg9FVQbrNihsqAXjxUJIQTlOEjGWwzm5blyMdC4h4DZUCo7LECEE4XYoqVAvxFT9yiUGWjVQACZCWf9cGK+CuMxoDQotCqeisAFrI7stWkyb/wMQYE5ydS49Hk/nd8iQH7mG9SIBX2LR+ANzf5E34U5qQUEvvhU3EUnyA8h5u8istc4Gv+rruOYPDsJJq+39jBcRHf/uEkrXr/LXoFaFYyGbiLAxQAAAAASUVORK5CYII=" class="button-logo">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYWRnZS1jaGVjayI+PHBhdGggZD0iTTMuODUgOC42MmE0IDQgMCAwIDEgNC43OC00Ljc3IDQgNCAwIDAgMSA2Ljc0IDAgNCA0IDAgMCAxIDQuNzggNC43OCA0IDQgMCAwIDEgMCA2Ljc0IDQgNCAwIDAgMS00Ljc3IDQuNzggNCA0IDAgMCAxLTYuNzUgMCA0IDQgMCAwIDEtNC43OC00Ljc3IDQgNCAwIDAgMSAwLTYuNzZaIi8+PHBhdGggZD0ibTkgMTIgMiAyIDQtNCIvPjwvc3ZnPg==">
+                        </a>
+                    </div>
+                    <div class="connection-item">
+                        <a href="https://www.youtube.com/channel/UCyCguSPRdA7ntC9m_k2Ai3Q/videos" class="connection-button">
+                            Youtube - Lalith Flute
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVdJREFUSEvt1T1LHUEUxvHfVQvFF0QFEZQUCpIiRWws06URLPwCFoKF+iVEWxvBKiB+Bb9CuhhQtDGmsBBJoYKIFgHxZQd2YR3u3bmQ3EK40+3OOc//zHnO7Na0eNVarK8NSHY4btEYNjCFcUwmFXjBKa5xhnX8KfLKgGn8RH8TolUhd5jBeQgqA/aw+I/iRfoulmLAIT7/J8ABZmPADYYbAEKf57Cd+5Oq4wIfYsATOhpkPmfmd6ILa/kg9FVQbrNihsqAXjxUJIQTlOEjGWwzm5blyMdC4h4DZUCo7LECEE4XYoqVAvxFT9yiUGWjVQACZCWf9cGK+CuMxoDQotCqeisAFrI7stWkyb/wMQYE5ydS49Hk/nd8iQH7mG9SIBX2LR+ANzf5E34U5qQUEvvhU3EUnyA8h5u8istc4Gv+rruOYPDsJJq+39jBcRHf/uEkrXr/LXoFaFYyGbiLAxQAAAAASUVORK5CYII=" class="button-logo">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYWRnZS1jaGVjayI+PHBhdGggZD0iTTMuODUgOC42MmE0IDQgMCAwIDEgNC43OC00Ljc3IDQgNCAwIDAgMSA2Ljc0IDAgNCA0IDAgMCAxIDQuNzggNC43OCA0IDQgMCAwIDEgMCA2Ljc0IDQgNCAwIDAgMS00Ljc3IDQuNzggNCA0IDAgMCAxLTYuNzUgMCA0IDQgMCAwIDEtNC43OC00Ljc3IDQgNCAwIDAgMSAwLTYuNzZaIi8+PHBhdGggZD0ibTkgMTIgMiAyIDQtNCIvPjwvc3ZnPg==">
+                        </a>
+                    </div>
+                    <div class="connection-item">
+                        <a href="https://discord.com/users/991322990186876928" class="connection-button">
+                            Discord
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAddJREFUSEvd1UuIz1EUB/DPeJVHHjUUSSFTFhZWFjYTJWSaDTsrr1iM3cRC2RBTdspzIWWllJSiMdnYKAs7REgiosYjeXOP7q9+/9sPjfHfzFnd373nnO/3nvM999ehzdbR5vzGNsAMrEM3LuJKUc712IDr+exdU7mbSjQFZ9GLiTnoBe4WCZZiTt77iAvYik91vyaAw9jzj83fl0gd/BPAosy0Yj5SnA9YgmdVYHmD49g50qyF/wD2NgEE65eYOUqAp1iAH5GnfoNNON+Q/E6+9oTi7AseIJpd2hoMlgAnU+12FJ4hw8uYhduZWbg8wnK8QQ8uFXFH0F8C3EioK2uO7xGz8D3vnca22roiMx4xA5NrsUEqyLWUKBJOLZgE8+G8dw2r8/oq1ub17Ny7eujjNEsLS4BfTSlsCKewAn21wfuMo4nlLWzHqiIuSAW5lht8w7hRKqgKf43OEiBGfFINIIbmK6b/BfQtQmHxxFT2PN18XglwIA9INC3sHnZhfpLjZsSUz81nkeAhzqXGh+5PoCufhXz341AJEN+h6WP5BY3vV7lZIYAmm4YnVb3zq7ob9yvn3/1wFqfALem5vtmg8RJoY3pJl+EMQj0tNrb/aP9FsW0v0U+L6k8ZSRzaBQAAAABJRU5ErkJggg==" class="button-logo">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYWRnZS1jaGVjayI+PHBhdGggZD0iTTMuODUgOC42MmE0IDQgMCAwIDEgNC43OC00Ljc3IDQgNCAwIDAgMSA2Ljc0IDAgNCA0IDAgMCAxIDQuNzggNC43OCA0IDQgMCAwIDEgMCA2Ljc0IDQgNCAwIDAgMS00Ljc3IDQuNzggNCA0IDAgMCAxLTYuNzUgMCA0IDQgMCAwIDEtNC43OC00Ljc3IDQgNCAwIDAgMSAwLTYuNzZaIi8+PHBhdGggZD0ibTkgMTIgMiAyIDQtNCIvPjwvc3ZnPg==">
+                        </a>
+                    </div>
+                    <div class="connection-item">
+                        <a href="https://buymeacoffee.com/tony.mrxz" class="connection-button">
+                            Buy me a Coffee
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jb2ZmZWUiPjxwYXRoIGQ9Ik0xMCAydjIiLz48cGF0aCBkPSJNMTQgMnYyIi8+PHBhdGggZD0iTTE2IDhhMSAxIDAgMCAxIDEgMXY4YTQgNCAwIDAgMS00IDRIN2E0IDQgMCAwIDEtNC00VjlhMSAxIDAgMCAxIDEtMWgxNGE0IDQgMCAxIDEgMCA4aC0xIi8+PHBhdGggZD0iTTYgMnYyIi8+PC9zdmc+">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iYWRnZS1jaGVjayI+PHBhdGggZD0iTTMuODUgOC42MmE0IDQgMCAwIDEgNC43OC00Ljc3IDQgNCAwIDAgMSA2Ljc0IDAgNCA0IDAgMCAxIDQuNzggNC43OCA0IDQgMCAwIDEgMCA2Ljc0IDQgNCAwIDAgMS00Ljc3IDQuNzggNCA0IDAgMCAxLTYuNzUgMCA0IDQgMCAwIDEtNC43OC00Ljc3IDQgNCAwIDAgMSAwLTYuNzZaIi8+PHBhdGggZD0ibTkgMTIgMiAyIDQtNCIvPjwvc3ZnPg==">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="Contacts">
+            <h3>Contact Me from Here!</h3>
+            <div class="contact">
+                <a href="https://www.instagram.com/musicu.mrxz/" class="contact-button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="class="contact-logo"></a>
+                
+                <a href="https://discord.com/users/991322990186876928" class="contact-button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAddJREFUSEvd1UuIz1EUB/DPeJVHHjUUSSFTFhZWFjYTJWSaDTsrr1iM3cRC2RBTdspzIWWllJSiMdnYKAs7REgiosYjeXOP7q9+/9sPjfHfzFnd373nnO/3nvM999ehzdbR5vzGNsAMrEM3LuJKUc712IDr+exdU7mbSjQFZ9GLiTnoBe4WCZZiTt77iAvYik91vyaAw9jzj83fl0gd/BPAosy0Yj5SnA9YgmdVYHmD49g50qyF/wD2NgEE65eYOUqAp1iAH5GnfoNNON+Q/E6+9oTi7AseIJpd2hoMlgAnU+12FJ4hw8uYhduZWbg8wnK8QQ8uFXFH0F8C3EioK2uO7xGz8D3vnca22roiMx4xA5NrsUEqyLWUKBJOLZgE8+G8dw2r8/oq1ub17Ny7eujjNEsLS4BfTSlsCKewAn21wfuMo4nlLWzHqiIuSAW5lht8w7hRKqgKf43OEiBGfFINIIbmK6b/BfQtQmHxxFT2PN18XglwIA9INC3sHnZhfpLjZsSUz81nkeAhzqXGh+5PoCufhXz341AJEN+h6WP5BY3vV7lZIYAmm4YnVb3zq7ob9yvn3/1wFqfALem5vtmg8RJoY3pJl+EMQj0tNrb/aP9FsW0v0U+L6k8ZSRzaBQAAAABJRU5ErkJggg==" class="contact-logo"></a>
+                
+                <a href="https://in.pinterest.com/Tony_Mrxz/" class="contact-button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAqZJREFUSEu1lVmojmEQx3+HlCwXsi9FcoGylrhQtqzZku2CEoWyZI2yL9mSNWsRuZCiLInsuZEllAtlDynKckHIOv+veWvO03u+71Bnrp53Zt7nP/Of5SmjiqWsiu+nFEBNYBQwCOgEtAL+AM+Be8A54CTwo6JAiwEMAXYDLUtk+RiYClzL86sIYDWw7B/o+w3MB7al/+QBrAGW5lwual4AL4G6QNccn5nArqhPAUY4p9HnEHAQuA18C4YuwCpgWNApk57AjUwXAeoAj4Cm4YfRwAlAxR4AtAG+A3fDJYuB9eGfB4DAf0kXAaYBe4PjZmAh0N5B2iaU7AFmeFftAGYF+2DgfApwBhjqTl89k8+mu2O0dQYueoa6NJNFwCbrtkbWSW+A6m7YCcxOAV4Dzd1Bl4mS4ZbuKeAYMN5tasdefn4HNPazeO/h55vZOVKkqMW1REWdYoeVRsEKB1KGkstA35BFfYv2gwcx1vVvje4maQZfLN1a7nDaJlUdNRfY4mfpagAfgdrup4JnQYnzga4XoIDLFfkp0Nod3nsNmjnvy4GNQD9rw0sh+iuuk0p0NXSbOqljCnA08CzbPGArcN92zRLgrE+3pjwTrRPto/7AhaA/bEM5KQWYABwJThoajf4cT/eTgXQz/q875xtMr25R52gI1fuZjAGOpwDi9RVQLzjqeMui7A40sLlQndQMmYj//cDEoHtiBW9n6+ZnCqDvycCBBGCdU6Q21Vn2h0Afo28k0CL4a1/19iwL6rxlp65R92QiLsXpPl/LCX65T9G5PWoqWtdrPWr5apmpkJpUTWyeKPIF3tLl7MUeHBVdRRzn67lQtBzRgpxu0301z1jqydRgacvqAj2bHYBqwDMvvmZCT2ahoP8DUIzvStlKZVCpS4o5/QUuzoEZGu6bbQAAAABJRU5ErkJggg=="/></a>
+                
+                <a href="https://x.com/REBRFRT" class="contact-button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEvd1b1rFVEQBfBfNKAQsYqFoBiFIEIUESstlYAhYJQQIoJFLETsFUXxD9DGQrERCdjYWAiBFDYS0gQFxRSpEhIQBbESwS9I7sA+WNbdzb4Hr8nt9s6dc+6cO3O2R5dXT5fxbT2CPvzcRLbduI9RHMRfPMYd7MX57Hs9cPISbcciJvCphuQNzpTE17Afl/CyFc8TDGAF33AB8yUgJ/C+hvwd3uIFPhQr2Ikf6M0AnuEevuQAL2fJVRwh740k3XRZBbEXtz5VyJ7DayzgOB7VVPAcU/l4XqJdOIxZ9Hc4Hw9ws4pgH1bxPXXBng4JQp4nVQTbsIwDHYJH2hEsVRHE/sWsxVoP3Q5XdOChYkKZVcQc3MXRdtBxHU+bEIxgpk3wGLLBNM1/mhDEmejjKw1J/uF01sb/pVS5aTz4EG6nR5usIQq/uZoaI/q/dJURhOGdxC2cqwH/hZjsV3WV5gnO4mFKOFYwwbL8GMZraWpD+9pVrCCseDwZ1RiGsSPJ9Btf8RnhpHHjj5sBt+Jb74/WtPLG57ou0QbqWz0ZBzSqswAAAABJRU5ErkJggg=="/></a>
+                
+                <a href="mailto:mismartband0891@gmail.com" class="contact-button">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUVJREFUSEvt1T0vREEUxvHfIiKhUItCoZAofQOJSkFCg0RFo0RCpaFQoNBQe+loJDolvoGodCQSX0DhdeTumtzsmrvLdm43OWee/3nOzJlb0uSv1GR9/4Bkh+MWDWMf3TjAKl6SCt8JY1hHO+ZwGUIx4AE9keAVJvGYgLRhE0tR3h3684D3KkJPGMd1DUgfTjBUJf5VfOygGiDkhDatYCcnEsCH6KoBLwwo7z/DNF6xi/lE6+oGBL3bzPVAgcNvCFBAt5KSBFwgVNqbUL3PnI3k8pKALWzgGKM1IOeYwRoW6wVsYznbtICw7sjWz5ngXrYOsV8Bgs4gTjPBCdxEFf8JIOh1Ztc0OIi/0M54kisz9tOgxS1K3Z5CDsIAteRsl88gBcg7ePt8+FrzT8URpiJIPQ5iQBAPN282D0hV2VD8/5eZbNsHnRQ+GcOlqXcAAAAASUVORK5CYII"/></a>
+            </div>
+        </div>
+
+        <div id="music-box" class="collapsed">
+            <div id="music-thumbnail" onclick="toggleMusicBox()">
+                <img id="album-cover" src="default.jpg" alt="Album Cover">
+            </div>
+            <div id="music-details">
+                <h4 id="song-title">Song Name</h4>
+                <div class="button-container">
+                    <button id="mute-btn" onclick="toggleMute()">
+                        <img id="mute-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS12b2x1bWUtMiI+PHBhdGggZD0iTTExIDQuNzAyYS43MDUuNzA1IDAgMCAwLTEuMjAzLS40OThMNi40MTMgNy41ODdBMS40IDEuNCAwIDAgMSA1LjQxNiA4SDNhMSAxIDAgMCAwLTEgMXY2YTEgMSAwIDAgMCAxIDFoMi40MTZhMS40IDEuNCAwIDAgMSAuOTk3LjQxM2wzLjM4MyAzLjM4NEEuNzA1LjcwNSAwIDAgMCAxMSAxOS4yOTh6Ii8+PHBhdGggZD0iTTE2IDlhNSA1IDAgMCAxIDAgNiIvPjxwYXRoIGQ9Ik0xOS4zNjQgMTguMzY0YTkgOSAwIDAgMCAwLTEyLjcyOCIvPjwvc3ZnPg==" />
+                    </button>
+                    <button id="link-btn">
+                        <a id="song-link" href="#" target="_blank">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1saW5rIj48cGF0aCBkPSJNMTAgMTNhNSA1IDAgMCAwIDcuNTQuNTRsMy0zYTUgNSAwIDAgMC03LjA3LTcuMDdsLTEuNzIgMS43MSIvPjxwYXRoIGQ9Ik0xNCAxMWE1IDUgMCAwIDAtNy41NC0uNTRsLTMgM2E1IDUgMCAwIDAgNy4wNyA3LjA3bDEuNzEtMS43MSIvPjwvc3ZnPg==">
+                            </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <audio id="bg-audio" loop></audio>
+
+
+        
+        <footer>
+            <p>&copy; 2025 | Tony | Mrxz | All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
